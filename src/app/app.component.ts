@@ -7,7 +7,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
+// use  https://angular.io/api/forms/Validators
   @ViewChild('f', {static: false}) singupForm : NgForm;
 
   suggestUserName() {
