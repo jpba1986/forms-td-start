@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 
 @Component({
   selector: 'app-root',
@@ -11,8 +12,24 @@ export class AppComponent {
   @ViewChild('f', {static: false}) singupForm : NgForm;
   defaultQuestion = 'pet';
   answer = '';
+  genders =['male','female'];
+
   suggestUserName() {
     const suggestedName = 'Superuser';
+/*     this.singupForm.setValue({
+      userData : {
+        username: suggestedName,
+        email:''
+      },
+      secret:'pet',
+      questionAnswer:'',
+      gender: 'male'
+    }); */
+    this.singupForm.form.patchValue({
+      userData : {
+        username: suggestedName
+      }
+    });
   }
 
  // onSubmit(form: NgForm){
