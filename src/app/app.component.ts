@@ -10,6 +10,7 @@ export class AppComponent {
 // use  https://angular.io/api/forms/Validators
   @ViewChild('f', {static: false}) singupForm : NgForm;
   defaultQuestion = 'pet';
+  answer = '';
   suggestUserName() {
     const suggestedName = 'Superuser';
   }
