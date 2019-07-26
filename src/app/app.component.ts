@@ -9,7 +9,7 @@ import { NgForm } from '@angular/forms';
 export class AppComponent {
 // use  https://angular.io/api/forms/Validators
   @ViewChild('f', {static: false}) singupForm : NgForm;
-
+  defaultQuestion = 'pet';
   suggestUserName() {
     const suggestedName = 'Superuser';
   }
