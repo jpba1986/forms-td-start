@@ -53,6 +53,8 @@ export class AppComponent {
     this.user.secretQuestion = this.singupForm.value.secret;
     this.user.answer = this.singupForm.value.questionAnswer;
     this.user.gender = this.singupForm.value.gender;
+    //console.log(this.user);
+    this.singupForm.reset();
   }
 
 }
