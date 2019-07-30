@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
   forbiddenUsernames = ['Chris','Anna'];
 
   ngOnInit(){
-    this.signupForm = new FormGroup({
+/*    this.signupForm = new FormGroup({
       'userData': new FormGroup({
         'username': new FormControl(null,[Validators.required, this.forbiddenNames.bind(this)]),
         'email': new FormControl(null, [Validators.required, Validators.email],this.forbiddenEmails)        
@@ -42,18 +42,18 @@ export class AppComponent implements OnInit {
       'gender': 'male',
       'hobbies' : []
     });
-    
+
 
     this.signupForm.patchValue({
       'userData': {
         'username': 'Anna'
       }
     });
-
+*/
 
   }
 
-  onSubmit(){
+ /* onSubmit(){
     console.log(this.signupForm);
     this.signupForm.reset();
   }
@@ -82,7 +82,7 @@ export class AppComponent implements OnInit {
       });
       return promise;
   }
-
+*/
 
   /* getControls() {
     return (<FormArray>this.signupForm.get('hobbies')).controls;
