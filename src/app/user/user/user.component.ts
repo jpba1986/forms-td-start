@@ -12,8 +12,9 @@ export class UserComponent implements OnInit {
   pass         ='';
   subscription ='';
   subs         ='';
-  defaultSubs  ='advanced';
+  defaultSubs  ='Advanced';
   showData = false;
+  subcripArray = ['Basic','Advanced','Pro'];
 
   constructor() { }
 
